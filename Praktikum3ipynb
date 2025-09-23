@@ -1,0 +1,350 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNYuQcduZYq7Fo+PwMYQo6Z",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/nasywaauliya2/Pemerograman-Dasar/blob/main/Praktikum3ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eJiyUJcdfOnX",
+        "outputId": "dd6df633-e226-4c67-9c7c-97eb6d22ac14"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Berapa porsi makan yang anda beli : 4 \n",
+            "Siapa Nama pelanggan ? :Nasywa\n"
+          ]
+        }
+      ],
+      "source": [
+        "total = float(input(\"Berapa porsi makan yang anda beli : \"))\n",
+        "Nama = str(input(\"Siapa Nama pelanggan ? :\"))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "food = \"mochi\"\n",
+        "print(\"Nasywa sedang memesan\", food)\n",
+        "print(\"Nasywa sedang memesan \" + food)\n",
+        "print(\"Nasywa sedang memesan %s\" % (food))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EnGT8OEJhn13",
+        "outputId": "6e6f4cd8-7d8e-480e-f4f8-42b28068e2d2"
+      },
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nasywa sedang memesan mochi\n",
+            "Nasywa sedang memesan mochi\n",
+            "Nasywa sedang memesan mochi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nama = \"Nasywa\"\n",
+        "umur = 19\n",
+        "tinggi = 157.8\n",
+        "nilai = 50\n",
+        "\n",
+        "print(\"Nama saya %s\" % (nama))\n",
+        "print(\"Umur saya %d tahun\" % (umur))\n",
+        "print(\"Tinggi saya %f cm\" % (tinggi))\n",
+        "print(\"Nilai dalam heksadesimal %x\" % (nilai))\n",
+        "print(\"Nilai dalam oktal %o\" % (nilai))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pMaf45wAnJCd",
+        "outputId": "f8762875-9dcc-4ae8-b31f-d4c02fc94320"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nama saya Nasywa\n",
+            "Umur saya 19 tahun\n",
+            "Tinggi saya 157.800000 cm\n",
+            "Nilai dalam heksadesimal 32\n",
+            "Nilai dalam oktal 62\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 20\n",
+        "b = 5\n",
+        "print(\"penjumlahan:\", a + b)\n",
+        "print(\"Pengurangan:\", a - b)\n",
+        "print(\"Perkalian:\", a * b)\n",
+        "print(\"Pembagian\", a / b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZUgjCWwmjjLS",
+        "outputId": "2d995d15-f0d2-4703-c73e-6e24378b0c0e"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "penjumlahan: 25\n",
+            "Pengurangan: 15\n",
+            "Perkalian: 100\n",
+            "Pembagian 4.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "bilangan = 8\n",
+        "hasil = (bilangan > 0) and (bilangan % 2 == 0)\n",
+        "print(\"Genap dan posisitif?\", hasil)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RlOl-ABGkjZb",
+        "outputId": "5e5587cf-b221-4124-95e7-14f60bbd8d74"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Genap dan posisitif? True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "harga_makan = int(input(\"Berapa harga mochi per porsi? (masukkan hanya angka)\"))\n",
+        "jumlah_makan = int(input(\"Berapa porsi yang Anda beli? \"))\n",
+        "total_makan = harga_makan * jumlah_makan\n",
+        "\n",
+        "print(f\"Harga makan per porsi = {harga_makan}, totalnya adalah {total_makan}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "51nsqStrk25u",
+        "outputId": "c1f93b99-bf4a-4e01-8fb0-507d22112966"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Berapa harga mochi per porsi? (masukkan hanya angka)15000\n",
+            "Berapa porsi yang Anda beli? 5\n",
+            "Harga makan per porsi = 15000, totalnya adalah 75000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "total_detik =int(input(\"Masukkan total detik: \"))\n",
+        "jam = total_detik // 3600\n",
+        "sisa_detik = total_detik % 3600\n",
+        "menit = sisa_detik // 60\n",
+        "detik = sisa_detik % 60\n",
+        "print(f\"Hasil konversi: {jam} Jam, {menit} Menit, {detik} Detik\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dn1jHSm4l8Mh",
+        "outputId": "9294bb43-678b-43bd-9f59-b650476a7709"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan total detik: 358200\n",
+            "Hasil konversi: 99 Jam, 30 Menit, 0 Detik\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "tugas = 80\n",
+        "uts = 70\n",
+        "uas = 90\n",
+        "nilai_akhir = (0.3 * tugas) + (0.3 * uts) + (0.4 * uas)\n",
+        "print(\"nilai_akhir =\", nilai_akhir)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UPpyPHwFqUIF",
+        "outputId": "68a62bd2-6000-40be-a01c-f5ee8b1e4c2f"
+      },
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "nilai_akhir = 81.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "daspro = int(input(\"nilai daspro: \"))\n",
+        "plc = int(input(\"nilai plc: \"))\n",
+        "kimia = int(input( \"nilai kimia: \"))\n",
+        "fluida = int(input(\"nilai fluida: \"))\n",
+        "perpindahan  = int(input(\"nilai perpindahan panas: \"))\n",
+        "standar_kelulusan = int(input(\"nilai standar kelulusan: \"))\n",
+        "nilai_mahasiswa = (daspro + plc + kimia + fluida + perpindahan) / 5\n",
+        "apakah_lulus = nilai_mahasiswa >= standar_kelulusan\n",
+        "perlu_remedial = nilai_mahasiswa < standar_kelulusan\n",
+        "\n",
+        "print(f\"nilai_mahasiswa : {nilai_mahasiswa}\")\n",
+        "print(f\"Apakah mahasiswa lulus? {apakah_lulus}\")\n",
+        "print(f\"Apakah mahasiswa perlu remedial? {perlu_remedial}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-Ow7YVjJsJrG",
+        "outputId": "82fe5e69-7593-4dc1-d764-3e2e5bde6598"
+      },
+      "execution_count": 56,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "nilai daspro: 80\n",
+            "nilai plc: 90\n",
+            "nilai kimia: 85\n",
+            "nilai fluida: 95\n",
+            "nilai perpindahan panas: 90\n",
+            "nilai standar kelulusan: 70\n",
+            "nilai_mahasiswa : 88.0\n",
+            "Apakah mahasiswa lulus? True\n",
+            "Apakah mahasiswa perlu remedial? False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "sfRoS8D21xwe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "belanja = int(input(\"total belanja:\") )\n",
+        "diskon = (0, 0.35 * belanja) [belanja > 1000000]\n",
+        "total_harga = belanja - diskon\n",
+        "print(f\"total belanja: {belanja}\")\n",
+        "print(f\"diskon: {diskon}\")\n",
+        "print(f\"total harga: {total_harga}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DSd1ix_pwdvK",
+        "outputId": "37a1c27c-fe53-43dd-b19e-8eb337bcc6e7"
+      },
+      "execution_count": 49,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "total belanja:15000000\n",
+            "total belanja: 15000000\n",
+            "diskon: 5250000.0\n",
+            "total harga: 9750000.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "nGqA9MGzzSX3"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
